@@ -23,7 +23,7 @@ function Footer() {
           <h4>Contact Info</h4>
           <p>Owner: A. Karthik</p>
           <p>Email: info@akcateringservices.com</p>
-          <p>Phone: +91 XXXXX XXXXX</p>
+          <p>Phone: +91 9715583019</p>
         </div>
       </div>
       <div className="footer-bottom">
