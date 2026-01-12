@@ -8,5 +8,5 @@ const REPO_NAME = 'ak-catering-services' // CHANGE THIS to your repository name
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? `/${REPO_NAME}/` : '/',
+  base:'/'
 })
