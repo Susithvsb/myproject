@@ -1,0 +1,157 @@
+.event-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px var(--shadow);
+  transition: all 0.3s ease;
+  border: 1px solid var(--warm-cream);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.event-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: var(--warm-cream);
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.05);
+}
+
+.event-content {
+  padding: 1.5rem;
+}
+
+.event-content h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-date {
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.event-guests {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.event-description {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.event-dishes {
+  padding-top: 1rem;
+  border-top: 1px solid var(--warm-cream);
+}
+
+.event-dishes strong {
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.event-dishes ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.event-dishes li {
+  color: var(--text-light);
+  padding: 0.3rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.event-dishes li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .event-image {
+    height: 200px;
+  }
+
+  .event-content {
+    padding: 1.2rem;
+  }
+
+  .event-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .event-date {
+    font-size: 0.95rem;
+  }
+
+  .event-guests {
+    font-size: 0.9rem;
+  }
+
+  .event-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-image {
+    height: 180px;
+  }
+
+  .event-content {
+    padding: 1rem;
+  }
+
+  .event-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .event-date {
+    font-size: 0.9rem;
+  }
+
+  .event-guests {
+    font-size: 0.85rem;
+  }
+
+  .event-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .event-dishes {
+    padding-top: 0.8rem;
+  }
+
+  .event-dishes strong {
+    font-size: 0.95rem;
+  }
+
+  .event-dishes li {
+    font-size: 0.85rem;
+    padding: 0.2rem 0;
+  }
+}
